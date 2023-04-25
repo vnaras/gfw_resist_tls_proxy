@@ -15,7 +15,7 @@ if os.name == 'posix':
     print('os is linux')
     import resource   # ( -> pip install python-resources )
     # set linux max_num_open_socket from 1024 to 128k
-    resource.setrlimit(resource.RLIMIT_NOFILE, (127000, 128000))
+    resource.setrlimit(resource.RLIMIT_NOFILE, (1024, 128000))
 
 
 
